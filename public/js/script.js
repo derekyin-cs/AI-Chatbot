@@ -1,4 +1,6 @@
-// 
+
+// instantiate socket
+const socket = io();
 // save text from user input into variable
 var text = document.getElementById("userInput").value;
 
@@ -9,3 +11,4 @@ send.addEventListener("click", function() {
     socket.emit("send", text);
 });
 
+// https://dialogflow.cloud.google.com/cx/projects?authuser=1
